@@ -1,0 +1,27 @@
+{
+  "name": "gulpatic",
+  "version": "0.0.1",
+  "description": "Static server with gulp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boriskaiser/gulpatic.git"
+  },
+  "keywords": [
+    "static",
+    "server",
+    "gulp"
+  ],
+  "author": {
+    "name": "Boris Kaiser",
+    "email": "mail@boriskaiser.com",
+    "url": "http://boriskaiser.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boriskaiser/gulpatic/issues"
+  },
+  "homepage": "https://github.com/boriskaiser/gulpatic",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
+}
