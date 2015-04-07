@@ -1,17 +1,23 @@
 'use strict';
 
+var _paths = require('../config/paths');
+
+var	_connectPort = 8000,
+	_syncPort = 3000;
+
+
 gulp.task('_connect', function () {
 	$.connectPhp.server({
-		base: 'src',
-		port: 8000,
+		base: _paths.src,
+		port: _connectPort,
 		keepalive: true
 	});
 });
 
 gulp.task('_browser-sync', function () {
 	browserSync({
-		proxy: '127.0.0.1:8000',
-		port: 3000,
+		proxy: '127.0.0.1:' + _connectPort,
+		port: _syncPort,
 		open: true,
 		notify: false
 	});
@@ -24,5 +30,5 @@ gulp.task('serve', function () {
 	runSequence('_connect', '_browser-sync');
 
 	// Watch PHP files
-	gulp.watch('src/**/*.php', reload);
+	gulp.watch(_paths.src + '/**/*.php', reload);
 });
