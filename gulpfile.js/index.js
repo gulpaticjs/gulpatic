@@ -7,6 +7,6 @@ reload = browserSync.reload;
 
 // // Require all tasks in _gulp/tasks, including subfolders
 var requireDir = require('require-dir');
-requireDir('./_gulp/tasks', {
+requireDir('./tasks', {
 	recurse: true
 });
