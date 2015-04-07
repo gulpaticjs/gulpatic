@@ -8,7 +8,9 @@
   },
   "keywords": [
     "static",
+    "php",
     "server",
+    "webserver",
     "gulp"
   ],
   "author": {
@@ -17,10 +19,6 @@
     "url": "http://boriskaiser.com"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/boriskaiser/gulpatic/issues"
-  },
-  "homepage": "https://github.com/boriskaiser/gulpatic",
   "devDependencies": {
     "browser-sync": "^2.5.3",
     "gulp": "^3.8.11",
