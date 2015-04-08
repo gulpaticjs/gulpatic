@@ -1,7 +1,7 @@
 # [gulp](http://gulpjs.com)atic — Static server with gulp
 
 
-## Getting started
+## Getting started :rocket:
 ```bash
 $ git clone https://github.com/boriskaiser/gulpatic.git
 $ cd gulpatic
