@@ -14,6 +14,12 @@ gulp.task('_sass', function () {
 		.pipe($.if(_paths.current === _paths.tmp, $.sourcemaps.init()))
 		.pipe($.sass())
 		.pipe($.if(_paths.current === _paths.tmp, $.sourcemaps.write()))
+		.pipe($.sourcemaps.init({ loadMaps:true }))
+		.pipe($.autoprefixer({
+			browsers: ['last 3 versions'],
+			cascade: false
+		}))
+		.pipe($.sourcemaps.write())
 		.pipe($.if(_paths.current === _paths.dist, $.csso()))
 		.pipe(gulp.dest(_paths.current + '/' + _stylesFolder))
 		.pipe(reload({stream: true}));
