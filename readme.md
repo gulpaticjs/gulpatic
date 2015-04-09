@@ -16,6 +16,7 @@ $ gulp
 - [x] [gulp-data](https://github.com/colynb/gulp-data) — Generate a data object from a JSON file
 - [x] [gulp-twig](https://github.com/zimmen/gulp-twig) — Compile Twig templates
 - [x] [gulp-htmlmin](https://github.com/jonschlinkert/gulp-htmlmin) — Minify HTML
+- [x] [gulp-if](https://github.com/robrich/gulp-if) — Conditionally run a task
 - [ ] [gulp-html-replace](https://github.com/VFK/gulp-html-replace) — Replace build blocks in HTML
 - [ ] [gulp-scss-lint](https://github.com/juanfran/gulp-scss-lint) — Lint Sass files
 - [ ] [gulp-sass](https://github.com/dlmanning/gulp-sass) — Compile Sass to CSS
