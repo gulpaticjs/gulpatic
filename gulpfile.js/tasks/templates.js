@@ -7,6 +7,12 @@ var _dataPath = _tempatesPath + '/data.json';
 
 gulp.task('_twig', function () {
 	return gulp.src(_tempatesPath + '/*.twig')
+		.pipe($.plumber({
+			errorHandler: $.notify.onError({
+				title: "Templates task failed",
+				message: "<%= error.message %>"
+			})
+		}))
 		.pipe($.data(function () {
 			return JSON.parse(fs.readFileSync(_dataPath));
 		}))

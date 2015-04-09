@@ -17,6 +17,8 @@ $ gulp
 - [x] [gulp-twig](https://github.com/zimmen/gulp-twig) — Compile Twig templates
 - [x] [gulp-htmlmin](https://github.com/jonschlinkert/gulp-htmlmin) — Minify HTML
 - [x] [gulp-if](https://github.com/robrich/gulp-if) — Conditionally run a task
+- [x] [gulp-plumber](https://github.com/floatdrop/gulp-plumber) — Fixing Node pipes
+- [x] [gulp-notify](https://github.com/mikaelbr/gulp-notify) — Send messages based on Vinyl Files or Errors to Mac OS X, Linux or Windows using the node-notifier module
 - [ ] [gulp-html-replace](https://github.com/VFK/gulp-html-replace) — Replace build blocks in HTML
 - [ ] [gulp-scss-lint](https://github.com/juanfran/gulp-scss-lint) — Lint Sass files
 - [x] [gulp-sass](https://github.com/dlmanning/gulp-sass) — Compile Sass to CSS
