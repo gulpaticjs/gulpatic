@@ -1,11 +1,12 @@
 'use strict';
 
 var fs = require('fs');
-var _dataPath = _paths.src + '/data.json';
+var _tempatesPath = _paths.src + '/templates';
+var _dataPath = _tempatesPath + '/data.json';
 
 
 gulp.task('_twig', function () {
-	return gulp.src(_paths.src + '/*.twig')
+	return gulp.src(_tempatesPath + '/*.twig')
 		.pipe($.data(function () {
 			return JSON.parse(fs.readFileSync(_dataPath));
 		}))
@@ -22,7 +23,7 @@ gulp.task('templates', function () {
 	runSequence('_twig');
 
 	// Watch Twig files
-	gulp.watch(_paths.src + '/**/*.twig', ['_twig']);
+	gulp.watch(_tempatesPath + '/**/*.twig', ['_twig']);
 
 	// Watch data.json
 	gulp.watch(_dataPath, ['_twig']);
