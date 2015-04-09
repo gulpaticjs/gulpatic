@@ -8,6 +8,7 @@ gulp.task('_sass', function () {
 		.pipe($.if(_paths.current === _paths.tmp, $.sourcemaps.init()))
 		.pipe($.sass())
 		.pipe($.if(_paths.current === _paths.tmp, $.sourcemaps.write()))
+		.pipe($.if(_paths.current === _paths.dist, $.csso()))
 		.pipe(gulp.dest(_paths.current + '/' + _stylesFolder))
 		.pipe(reload({stream: true}));
 });
