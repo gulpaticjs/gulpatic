@@ -5,7 +5,13 @@ runSequence = require('run-sequence');
 browserSync = require('browser-sync');
 reload = browserSync.reload;
 
-// // Require all tasks in _gulp/tasks, including subfolders
+
+// Get configs
+_package = require('../package.json');
+_paths = require('./config/paths');
+
+
+// Require all tasks in tasks, including subfolders
 var requireDir = require('require-dir');
 requireDir('./tasks', {
 	recurse: true
