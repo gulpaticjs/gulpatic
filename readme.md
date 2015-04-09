@@ -21,7 +21,7 @@ $ gulp
 - [ ] [gulp-scss-lint](https://github.com/juanfran/gulp-scss-lint) — Lint Sass files
 - [x] [gulp-sass](https://github.com/dlmanning/gulp-sass) — Compile Sass to CSS
 - [ ] [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) — Prefix CSS with Autoprefixer
-- [ ] [gulp-csso](https://github.com/ben-eb/gulp-csso) — Minify CSS with CSSO
+- [x] [gulp-csso](https://github.com/ben-eb/gulp-csso) — Minify CSS with CSSO
 - [ ] [gulp-uglify](https://github.com/terinjokes/gulp-uglify) — Minify files with UglifyJS
 - [ ] [gulp-jshint](https://github.com/spalger/gulp-jshint) — Validate files with JSHint
 - [ ] [gulp-concat](https://github.com/wearefractal/gulp-concat) — Streaming concat middleware
