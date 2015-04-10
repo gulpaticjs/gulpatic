@@ -20,7 +20,7 @@ $ gulp
 - [x] [gulp-notify](https://github.com/mikaelbr/gulp-notify) — Send messages based on Vinyl Files or Errors to Mac OS X, Linux or Windows using the node-notifier module
 - [x] [gulp-deploy](https://github.com/sindresorhus/gulp-debug) — Debug vinyl file streams to see what files are run through your gulp pipeline
 - [x] [gulp-changed](https://github.com/sindresorhus/gulp-changed) — Only pass through changed files 
-- [ ] [gulp-html-replace](https://github.com/VFK/gulp-html-replace) — Replace build blocks in HTML
+- [ ] [gulp-useref](https://github.com/jonkemp/gulp-useref) — Parse build blocks in HTML files to replace references to non-optimized scripts or stylesheets
 - [ ] [gulp-scss-lint](https://github.com/juanfran/gulp-scss-lint) — Lint Sass files
 - [x] [gulp-sass](https://github.com/dlmanning/gulp-sass) — Compile Sass to CSS
 - [x] [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) — Prefix CSS with Autoprefixer
@@ -28,6 +28,7 @@ $ gulp
 - [x] [gulp-uglify](https://github.com/terinjokes/gulp-uglify) — Minify files with UglifyJS
 - [x] [gulp-jshint](https://github.com/spalger/gulp-jshint) — Validate files with JSHint
 - [ ] [gulp-concat](https://github.com/wearefractal/gulp-concat) — Streaming concat middleware
+- [ ] [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) — Minify PNG, JPEG, GIF and SVG images 
 - [ ] Create [Yeoman](http://yeoman.io/) generator
 
 
