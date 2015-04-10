@@ -1,12 +1,32 @@
 @import 'vars';
 
 body {
-  transform: rotate(260deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  margin-top: 0;
-  margin-right: 10px;
-  margin-bottom: 0;
-  margin-left: 10px;
+  width: 100vw;
+  height: 100vh;
 
-  background: $page-background;
+  margin: 0;
+  padding: 0;
+
+  box-shadow: inset 0 0 0 6px $color-gold;
+
+  text-align: center;
+  color: $color-gold;
+  font-size: 20px;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+}
+
+h1 {
+  margin: .85rem 0;
+
+  color: $color-black;
+  font-size: 2.8rem;
+}
+
+p {
+  margin: .5rem 0;
 }
