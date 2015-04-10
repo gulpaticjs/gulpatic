@@ -2,13 +2,14 @@
 
 var _stylesFolder = 'styles';
 var _stylesSrcPath = _paths.src + '/' + _stylesFolder;
-var _stylesDistPath = _paths.current + '/' + _stylesFolder;
 var _autoprefixerConfig = {
 	browsers: ['last 3 versions'],
 	cascade: false
 };
 
 gulp.task('_sass', function () {
+	var _stylesDistPath = _paths.current + '/' + _stylesFolder;
+
 	// For best performance, don't add Sass partials to `gulp.src`
 	return gulp.src(_stylesSrcPath + '/*.scss')
 
