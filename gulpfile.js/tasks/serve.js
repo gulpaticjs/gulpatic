@@ -18,6 +18,7 @@ gulp.task('_serve', function () {
 	runSequence(
 		'clean',
 		'styles',
+		'scripts',
 		'templates',
 		'_browser-sync'
 	);
