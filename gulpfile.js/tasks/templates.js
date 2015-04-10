@@ -1,12 +1,12 @@
 'use strict';
 
 var fs = require('fs');
-var _tempatesPath = _paths.src + '/templates';
-var _dataPath = _tempatesPath + '/data.json';
+var _tempatesSrcPath = _paths.src + '/templates';
+var _dataPath = _tempatesSrcPath + '/data.json';
 
 
 gulp.task('_twig', function () {
-	return gulp.src(_tempatesPath + '/*.twig')
+	return gulp.src(_tempatesSrcPath + '/*.twig')
 
 		.pipe($.plumber({
 			errorHandler: $.notify.onError({
@@ -35,7 +35,7 @@ gulp.task('templates', function () {
 	runSequence('_twig');
 
 	// Watch Twig files
-	gulp.watch(_tempatesPath + '/**/*.twig', ['_twig']);
+	gulp.watch(_tempatesSrcPath + '/**/*.twig', ['_twig']);
 
 	// Watch data.json
 	gulp.watch(_dataPath, ['_twig']);
