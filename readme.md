@@ -25,7 +25,7 @@ $ gulp
 - [x] [gulp-sass](https://github.com/dlmanning/gulp-sass) — Compile Sass to CSS
 - [x] [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) — Prefix CSS with Autoprefixer
 - [x] [gulp-csso](https://github.com/ben-eb/gulp-csso) — Minify CSS with CSSO
-- [ ] [gulp-uglify](https://github.com/terinjokes/gulp-uglify) — Minify files with UglifyJS
+- [x] [gulp-uglify](https://github.com/terinjokes/gulp-uglify) — Minify files with UglifyJS
 - [x] [gulp-jshint](https://github.com/spalger/gulp-jshint) — Validate files with JSHint
 - [ ] [gulp-concat](https://github.com/wearefractal/gulp-concat) — Streaming concat middleware
 - [ ] Create [Yeoman](http://yeoman.io/) generator

@@ -20,6 +20,8 @@ gulp.task('_js', function () {
 		.pipe($.jshint.reporter('jshint-stylish'))
 		.pipe($.jshint.reporter('fail'))
 
+		.pipe($.if(_paths.current === _paths.dist, $.uglify()))
+
 		.pipe(gulp.dest(_scriptsDistPath))
 
 		.pipe(reload({stream: true}));
