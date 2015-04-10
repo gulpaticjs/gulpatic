@@ -1,14 +1,13 @@
 # [gulp](http://gulpjs.com)atic — Static server with gulp
 
 
-## :rocket: Getting started 
+## :rocket: Getting started
 ```bash
 $ git clone https://github.com/boriskaiser/gulpatic.git
 $ cd gulpatic
 $ npm install
 $ gulp
 ```
-
 
 ## :scream_cat: TODOs
 - [x] [gulp-load-plugins](https://github.com/jackfranklin/gulp-load-plugins) — Automatically load any gulp plugins in your package.json
@@ -30,6 +29,12 @@ $ gulp
 - [ ] Create [Yeoman](http://yeoman.io/) generator
 
 
-## :beers: License
+## :raised_hands: Inspired by
+- [blackList.json (Gulp)](https://github.com/gulpjs/plugins/blob/master/src/blackList.json)
+- [gulpfile.js (Google Web Starter Kit )](https://github.com/google/web-starter-kit/blob/master/gulpfile.js)
+- [gulp-starter (Dan Tello)](https://github.com/greypants/gulp-starter)
+- [Introduction to Gulp.js (Stefan Imhoff)](http://stefanimhoff.de/2014/gulp-tutorial-1-intro-setup/)
 
+
+## :beers: License
 MIT © [Boris Kaiser](http://boriskaiser.com)
