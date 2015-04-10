@@ -19,6 +19,7 @@ $ gulp
 - [x] [gulp-plumber](https://github.com/floatdrop/gulp-plumber) — Fixing Node pipes
 - [x] [gulp-notify](https://github.com/mikaelbr/gulp-notify) — Send messages based on Vinyl Files or Errors to Mac OS X, Linux or Windows using the node-notifier module
 - [x] [gulp-deploy](https://github.com/sindresorhus/gulp-debug) — Debug vinyl file streams to see what files are run through your gulp pipeline
+- [x] [gulp-changed](https://github.com/sindresorhus/gulp-changed) — Only pass through changed files 
 - [ ] [gulp-html-replace](https://github.com/VFK/gulp-html-replace) — Replace build blocks in HTML
 - [ ] [gulp-scss-lint](https://github.com/juanfran/gulp-scss-lint) — Lint Sass files
 - [x] [gulp-sass](https://github.com/dlmanning/gulp-sass) — Compile Sass to CSS

@@ -2,13 +2,15 @@
 
 var _stylesFolder = 'styles';
 var _stylesSrcPath = _paths.src + '/' + _stylesFolder;
+var _stylesDistPath = _paths.current + '/' + _stylesFolder;
 var _autoprefixerConfig = {
 	browsers: ['last 3 versions'],
 	cascade: false
 };
 
 gulp.task('_sass', function () {
-	return gulp.src(_stylesSrcPath + '/styles.scss')
+	// For best performance, don't add Sass partials to `gulp.src`
+	return gulp.src(_stylesSrcPath + '/*.scss')
 
 		.pipe($.plumber({
 			errorHandler: $.notify.onError({
@@ -18,7 +20,10 @@ gulp.task('_sass', function () {
 		}))
 
 		.pipe($.if(_paths.current === _paths.tmp, $.sourcemaps.init()))
-		.pipe($.sass())
+		.pipe($.changed(_stylesDistPath, {extension: '.css'}))
+		.pipe($.sass({
+			precision: 10
+		}))
 		.pipe($.if(_paths.current === _paths.tmp, $.sourcemaps.write()))
 
 		.pipe($.sourcemaps.init({loadMaps: true}))
@@ -27,7 +32,7 @@ gulp.task('_sass', function () {
 
 		.pipe($.if(_paths.current === _paths.dist, $.csso()))
 
-		.pipe(gulp.dest(_paths.current + '/' + _stylesFolder))
+		.pipe(gulp.dest(_stylesDistPath))
 
 		.pipe(reload({stream: true}));
 });
