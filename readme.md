@@ -29,6 +29,7 @@ $ gulp
 - [x] [gulp-jshint](https://github.com/spalger/gulp-jshint) — Validate files with JSHint
 - [ ] [gulp-concat](https://github.com/wearefractal/gulp-concat) — Streaming concat middleware
 - [ ] [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) — Minify PNG, JPEG, GIF and SVG images 
+- [ ] [Integrate Bower](https://github.com/bower/bower) — A package manager for the web
 - [ ] Create [Yeoman](http://yeoman.io/) generator
 
 
