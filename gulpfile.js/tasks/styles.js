@@ -8,7 +8,7 @@ var _autoprefixerConfig = {
 };
 
 gulp.task('_sass', function () {
-	var _stylesDistPath = _paths.current + '/' + _stylesFolder;
+	var _stylesDistPath = _paths.tmp + '/' + _stylesFolder;
 
 	// For best performance, don't add Sass partials to `gulp.src`
 	return gulp.src(_stylesSrcPath + '/*.scss')

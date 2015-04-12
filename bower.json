@@ -1,0 +1,25 @@
+{
+  "name": "gulpatic",
+  "version": "0.0.1",
+  "homepage": "https://github.com/boriskaiser/gulpatic",
+  "author": {
+    "name": "Boris Kaiser",
+    "email": "mail@boriskaiser.com",
+    "url": "http://boriskaiser.com"
+  },
+  "description": "Static server with gulp",
+  "keywords": [
+    "static",
+    "server",
+    "webserver",
+    "gulp"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

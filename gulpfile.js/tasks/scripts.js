@@ -5,7 +5,7 @@ var _scriptsFolder = 'scripts';
 var _scriptsSrcPath = _paths.src + '/' + _scriptsFolder;
 
 gulp.task('_js', function () {
-	var _scriptsDistPath = _paths.current + '/' + _scriptsFolder;
+	var _scriptsDistPath = _paths.tmp + '/' + _scriptsFolder;
 
 	return gulp.src(_scriptsSrcPath + '/*.js')
 
