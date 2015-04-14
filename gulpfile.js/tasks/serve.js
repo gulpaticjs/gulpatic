@@ -14,27 +14,28 @@ gulp.task('_browser-sync', function () {
 	});
 });
 
-gulp.task('_serve', function () {
+gulp.task('_serve', function (callback) {
 	runSequence(
 		'clean',
 		'copy:bower',
 		'styles',
 		'scripts',
 		'templates',
-		'_browser-sync'
+		'_browser-sync',
+		callback
 	);
 });
 
 
 // Build and serve the output from the temp folder
-gulp.task('serve', function () {
-	runSequence('_serve');
+gulp.task('serve', function (callback) {
+	runSequence('_serve', callback);
 });
 
 // Build and serve the output from the dist folder
-gulp.task('serve:dist', function () {
+gulp.task('serve:dist', function (callback) {
 	// Change current path to dist
 	_paths.current = _paths.dist;
 
-	runSequence('_serve');
+	runSequence('_serve', callback);
 });

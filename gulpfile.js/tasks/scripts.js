@@ -29,9 +29,9 @@ gulp.task('_js', function () {
 
 
 // Scripts task
-gulp.task('scripts', function () {
+gulp.task('scripts', function (callback) {
 	// Compile Sass files
-	runSequence('_js');
+	runSequence('_js', callback);
 
 	// Watch Sass files
 	gulp.watch(_scriptsSrcPath + '/**/*.js', ['_js']);

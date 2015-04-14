@@ -40,9 +40,9 @@ gulp.task('_sass', function () {
 
 
 // Styles task
-gulp.task('styles', function () {
+gulp.task('styles', function (callback) {
 	// Compile Sass files
-	runSequence('_sass');
+	runSequence('_sass', callback);
 
 	// Watch Sass files
 	gulp.watch(_stylesSrcPath + '/**/*.scss', ['_sass']);

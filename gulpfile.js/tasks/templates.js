@@ -47,19 +47,20 @@ gulp.task('_useref', function () {
 		.pipe(reload({stream: true}));
 });
 
-gulp.task('_templates', function () {
+gulp.task('_templates', function (callback) {
 	runSequence(
 		// Compile Twig files
 		'_twig',
 		// Parse build blocks in HTML files to replace references to non-optimized scripts or stylesheets
-		'_useref'
+		'_useref',
+		callback
 	);
 });
 
 
 // Templates task
-gulp.task('templates', function () {
-	runSequence('_templates');
+gulp.task('templates', function (callback) {
+	runSequence('_templates', callback);
 
 	// Watch Twig files
 	gulp.watch(_tempatesSrcPath + '/**/*.twig', ['_templates']);
