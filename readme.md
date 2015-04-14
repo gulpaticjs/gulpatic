@@ -31,6 +31,7 @@ $ gulp
 - [x] [gulp-jshint](https://github.com/spalger/gulp-jshint) — Validate files with JSHint
 - [ ] [gulp-concat](https://github.com/wearefractal/gulp-concat) — Streaming concat middleware
 - [ ] [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) — Minify PNG, JPEG, GIF and SVG images
+- [ ] [gulp-rsync](https://github.com/jerrysu/gulp-rsync) — Rsync tasks for deploying gulp file structures
 - [x] [Integrate Bower](https://github.com/bower/bower) — A package manager for the web
 - [ ] Create [Yeoman](http://yeoman.io/) generator
 
