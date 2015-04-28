@@ -2,7 +2,10 @@
 
 var del = require('del');
 
-// Clean current path (excepting .gitkeep)
+// Clean all paths
 gulp.task('clean', function () {
-	del.sync([_paths.current + '/*', '!' + _paths.current + '/.gitkeep']);
+	del.sync([
+		_paths.tmp + '/*', '!' + _paths.tmp + '/.gitkeep',
+		_paths.dist + '/*', '!' + _paths.dist + '/.gitkeep'
+	]);
 });

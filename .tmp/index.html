@@ -3,14 +3,23 @@
 	<head>
 	    <meta charset="utf-8"/>
 	    <title>gulpatic —  Static server with gulp</title>
+		<!-- build:css styles/styles.min.css -->
+		<link rel="stylesheet" href="bower_components/normalize.css/normalize.css"/>
 	    <link rel="stylesheet" href="styles/styles.css">
+		<!-- endbuild -->
 	</head>
 	<body>
-	    	<header>
+		<section>
+				<header>
 		<h1>gulpatic</h1>
 	</header>
 	<p>
 		Static server with gulp.
 	</p>
+	    </section>
+
+		<!-- build:js scripts/main.min.js -->
+		<script src="scripts/main.js"></script>
+		<!-- endbuild -->
 	</body>
 </html>
