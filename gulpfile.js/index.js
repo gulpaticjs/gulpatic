@@ -11,7 +11,7 @@ _package = require('../package.json');
 _paths = require('./config/paths');
 
 
-// Require all tasks in tasks, including subfolders
+// Require all tasks in /gulpfile/tasks, including subfolders
 var requireDir = require('require-dir');
 requireDir('./tasks', {
 	recurse: true
