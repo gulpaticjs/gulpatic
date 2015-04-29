@@ -1,5 +1,8 @@
 # [gulp](http://gulpjs.com)atic — Static server with gulp
 
+<p align="center">
+  <img width="159" height="350" src="https://raw.githubusercontent.com/boriskaiser/gulpatic/master/src/images/gulp-logo/gulp-logo.png">
+</p>
 
 ## :rocket: Getting started
 ```bash
