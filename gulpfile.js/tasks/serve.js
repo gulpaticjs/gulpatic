@@ -18,9 +18,9 @@ gulp.task('_serve', function (callback) {
 	runSequence(
 		'clean',
 		'copy:bower',
+		'images',
 		'styles',
 		'scripts',
-		'images',
 		'templates',
 		'_browser-sync',
 		callback

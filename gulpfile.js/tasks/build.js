@@ -8,9 +8,9 @@ gulp.task('build', function (callback) {
 	runSequence(
 		'clean',
 		'copy:bower',
+		'_images',
 		'_sass',
 		'_js',
-		'_images',
 		'_templates',
 		callback
 	);

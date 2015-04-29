@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'svg-sprite';
 
 body {
   display: flex;
@@ -33,4 +34,31 @@ h1 {
 
 p {
   margin: .5rem 0;
+}
+
+
+
+// Footer
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  text-align: center;
+
+
+  ul {
+	list-style: none;
+	text-align: center;
+  }
+
+  li {
+	display: inline-block;
+  }
+
+  a {
+	display: inline-block;
+	margin: 0 20px;
+  }
 }
