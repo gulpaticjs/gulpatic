@@ -30,7 +30,7 @@ gulp.task('_js', function () {
 
 // Scripts task
 gulp.task('scripts', function (callback) {
-	// Compile Sass files
+	// Handle JS files
 	runSequence('_js', callback);
 
 	// Watch Sass files
