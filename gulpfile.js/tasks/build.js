@@ -10,6 +10,7 @@ gulp.task('build', function (callback) {
 		'copy:bower',
 		'_sass',
 		'_js',
+		'_images',
 		'_templates',
 		callback
 	);

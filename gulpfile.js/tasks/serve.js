@@ -20,6 +20,7 @@ gulp.task('_serve', function (callback) {
 		'copy:bower',
 		'styles',
 		'scripts',
+		'images',
 		'templates',
 		'_browser-sync',
 		callback
