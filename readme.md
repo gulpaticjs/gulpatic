@@ -19,7 +19,7 @@ $ gulp
 - [x] [gulp-if](https://github.com/robrich/gulp-if) — Conditionally run a task
 - [x] [gulp-plumber](https://github.com/floatdrop/gulp-plumber) — Fixing Node pipes
 - [x] [gulp-notify](https://github.com/mikaelbr/gulp-notify) — Send messages based on Vinyl Files or Errors to Mac OS X, Linux or Windows using the node-notifier module
-- [x] [gulp-deploy](https://github.com/sindresorhus/gulp-debug) — Debug vinyl file streams to see what files are run through your gulp pipeline
+- [x] [gulp-debug](https://github.com/sindresorhus/gulp-debug) — Debug vinyl file streams to see what files are run through your gulp pipeline
 - [x] [gulp-changed](https://github.com/sindresorhus/gulp-changed) — Only pass through changed files
 - [x] [gulp-useref](https://github.com/jonkemp/gulp-useref) — Parse build blocks in HTML files to replace references to non-optimized scripts or stylesheets
 - [x] [gulp-zip](https://github.com/sindresorhus/gulp-zip) — ZIP compress files
