@@ -4,7 +4,7 @@ module.exports = {
 	src: 'src',
 	tmp: '.tmp',
 	dist: 'dist',
-	build: 'build',
+	builds: 'builds',
 
 	current: '.tmp'
 };

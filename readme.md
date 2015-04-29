@@ -10,6 +10,16 @@ $ bower install
 $ gulp
 ```
 
+## :clapper: Gulp tasks
+- `$ gulp serve` or `$ gulp` — Build a development version and start a local server (incl. live reload)
+- `$ gulp serve:dist` — Build a production build and test it on a local server (incl. live reload)
+- `$ gulp build` — Build a production version
+- `$ gulp compress` — Compress a production version to a .zip file
+
+### Versions
+- The **development** version has all the template, style, script and image files that make up your site in a clean format that you are happy to work on.
+- A **production** version will take these files, minify them, concatenate / merge them and optimize files like images.
+
 ## :scream_cat: TODOs
 - [x] [gulp-load-plugins](https://github.com/jackfranklin/gulp-load-plugins) — Automatically load any gulp plugins in your package.json
 - [x] [BrowserSync](https://github.com/BrowserSync/browser-sync) — Time-saving synchronised browser testing
