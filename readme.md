@@ -12,7 +12,7 @@ $ gulp
 
 ## :clapper: Gulp tasks
 - `$ gulp serve` or `$ gulp` — Build a development version and start a local server (incl. live reload)
-- `$ gulp serve:dist` — Build a production build and test it on a local server (incl. live reload)
+- `$ gulp serve:dist` — Build a production version and start a local server (incl. live reload)
 - `$ gulp build` — Build a production version
 - `$ gulp compress` — Compress a production version to a .zip file
 
