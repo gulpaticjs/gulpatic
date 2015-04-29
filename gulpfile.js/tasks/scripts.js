@@ -30,9 +30,8 @@ gulp.task('_js', function () {
 
 // Scripts task
 gulp.task('scripts', function (callback) {
-	// Handle JS files
 	runSequence('_js', callback);
 
-	// Watch Sass files
+	// Watch JS files
 	gulp.watch(_scriptsSrcPath + '/**/*.js', ['_js']);
 });
