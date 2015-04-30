@@ -1,4 +1,7 @@
 @import 'vars';
+
+@import 'css-sprite';
+@include retina-sprites($retina-groups);
 @import 'svg-css-sprite';
 
 body {
@@ -75,6 +78,6 @@ footer {
 
     &:hover {
       color: $color-gold;
-	}
+   }
   }
 }

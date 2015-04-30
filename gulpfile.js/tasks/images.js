@@ -4,6 +4,7 @@ var pngquant = require('imagemin-pngquant');
 
 var _imagesFolder = 'images';
 var _imagesSrcPath = _paths.src + '/' + _imagesFolder;
+var _cssSpritePath = _imagesSrcPath + '/css-sprite';
 var _svgCssSpritePath = _imagesSrcPath + '/svg-css-sprite';
 var _svgSymbolSpritePath = _imagesSrcPath + '/svg-symbol-sprite';
 var _svgoPlugins = [
@@ -14,7 +15,22 @@ var _svgoPlugins = [
 
 
 // Traditional CSS sprites for use as background images
-gulp.task('svg:css-sprite', function () {
+gulp.task('css-sprite', function () {
+	return gulp.src(_cssSpritePath + '/*')
+		.pipe($.spritesmith({
+			padding: 10,
+			cssName: '_css-sprite.scss',
+			cssVarMap: function (sprite) {
+				sprite.name = 'sprite-' + sprite.name;
+			},
+			imgName: '../images/css-sprite.png',
+			retinaSrcFilter: ['**/*-2x.*'],
+			retinaImgName: '../images/css-sprite-2x.png'
+		}))
+		.pipe(gulp.dest(_paths.src + '/styles/'));
+});
+
+gulp.task('svg-sprite:css', function () {
 	return gulp.src(_svgCssSpritePath + '/*.svg')
 		.pipe($.svgSprite({
 			mode: {
@@ -37,7 +53,7 @@ gulp.task('svg:css-sprite', function () {
 });
 
 // Inline sprites using the <symbol> element
-gulp.task('svg:symbol-sprite', function () {
+gulp.task('svg-sprite:symbol', function () {
 	return gulp.src(_svgSymbolSpritePath + '/*.svg')
 		.pipe($.svgSprite({
 			transform: [{
@@ -55,15 +71,15 @@ gulp.task('svg:symbol-sprite', function () {
 		.pipe(gulp.dest(_paths.src));
 });
 
-gulp.task('svg', function (callback) {
+gulp.task('svg-sprite', function (callback) {
 	runSequence(
-		['svg:css-sprite', 'svg:symbol-sprite'],
+		['svg-sprite:css', 'svg-sprite:symbol'],
 		callback
 	);
 });
 
 
-gulp.task('_images', ['svg'], function () {
+gulp.task('_images', ['css-sprite', 'svg-sprite'], function () {
 	var _imagesDistPath = _paths.current + '/' + _imagesFolder;
 
 	return gulp.src([
@@ -71,7 +87,9 @@ gulp.task('_images', ['svg'], function () {
 		'!' + _svgCssSpritePath + '/',
 		'!' + _svgCssSpritePath + '/**',
 		'!' + _svgSymbolSpritePath + '/',
-		'!' + _svgSymbolSpritePath + '/**'
+		'!' + _svgSymbolSpritePath + '/**',
+		'!' + _cssSpritePath + '/',
+		'!' + _cssSpritePath + '/**'
 	])
 
 		.pipe($.if(_paths.current === _paths.dist, $.imagemin({

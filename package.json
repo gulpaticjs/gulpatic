@@ -43,6 +43,7 @@
     "gulp-uglify": "^1.2.0",
     "gulp-useref": "^1.1.2",
     "gulp-zip": "^3.0.2",
+    "gulp.spritesmith": "^3.5.4",
     "imagemin-pngquant": "^4.1.0",
     "jshint-stylish": "^1.0.1",
     "require-dir": "^0.3.0",
