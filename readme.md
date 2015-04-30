@@ -8,6 +8,7 @@
 ```bash
 $ git clone https://github.com/boriskaiser/gulpatic.git
 $ cd gulpatic
+$ gem install scss-lint
 $ npm install
 $ bower install
 $ gulp
@@ -36,7 +37,7 @@ $ gulp
 - [x] [gulp-changed](https://github.com/sindresorhus/gulp-changed) — Only pass through changed files
 - [x] [gulp-useref](https://github.com/jonkemp/gulp-useref) — Parse build blocks in HTML files to replace references to non-optimized scripts or stylesheets
 - [x] [gulp-zip](https://github.com/sindresorhus/gulp-zip) — ZIP compress files
-- [ ] [gulp-scss-lint](https://github.com/juanfran/gulp-scss-lint) — Lint Sass files
+- [x] [gulp-scss-lint](https://github.com/juanfran/gulp-scss-lint) — Lint Sass files
 - [x] [gulp-sass](https://github.com/dlmanning/gulp-sass) — Compile Sass to CSS
 - [x] [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) — Prefix CSS with Autoprefixer
 - [x] [gulp-csso](https://github.com/ben-eb/gulp-csso) — Minify CSS with CSSO

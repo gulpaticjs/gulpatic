@@ -22,16 +22,17 @@ body {
 }
 
 svg {
-  &, path {
-	fill: currentColor;
+  &,
+  path {
+    fill: currentColor;
   }
 }
 
 .svg-symbol-sprite {
 
   &--stackoverflow {
-	width: 27px;
-	height: 36px;
+    width: 27px;
+    height: 36px;
   }
 }
 
@@ -59,24 +60,21 @@ footer {
   text-align: center;
 
   ul {
-	list-style: none;
-	text-align: center;
+    list-style: none;
+    text-align: center;
   }
 
   li {
-	display: inline-block;
+    display: inline-block;
   }
 
   a {
-	display: inline-block;
-	margin: 0 20px;
-	color: $color-black;
+    display: inline-block;
+    margin: 0 20px;
+    color: $color-black;
 
-	&:hover {
-	  color: $color-gold;
+    &:hover {
+      color: $color-gold;
 	}
   }
 }
-
-
-

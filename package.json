@@ -36,6 +36,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.0",
     "gulp-sass": "^1.3.3",
+    "gulp-scss-lint": "^0.1.12",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-svg-sprite": "^1.1.2",
     "gulp-twig": "^0.3.0",
