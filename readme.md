@@ -43,7 +43,6 @@ $ gulp
 - [x] [gulp-csso](https://github.com/ben-eb/gulp-csso) — Minify CSS with CSSO
 - [x] [gulp-uglify](https://github.com/terinjokes/gulp-uglify) — Minify files with UglifyJS
 - [x] [gulp-jshint](https://github.com/spalger/gulp-jshint) — Validate files with JSHint
-- [ ] [gulp-concat](https://github.com/wearefractal/gulp-concat) — Streaming concat middleware
 - [x] [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) — Minify PNG, JPEG, GIF and SVG images
 - [ ] [gulp.spritesmith](https://github.com/twolfson/gulp.spritesmith) — Convert a set of images into a spritesheet and CSS variables via gulp
 - [x] [gulp-svg-sprite](https://github.com/jkphl/gulp-svg-sprite) — SVG sprites & stacks galore
