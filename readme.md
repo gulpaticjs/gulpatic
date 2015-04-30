@@ -22,7 +22,10 @@ $ gulp
 
 ### Versions
 - The **development** version has all the template, style, script and image files that make up your site in a clean format that you are happy to work on.
-- A **production** version will take these files, minify them, concatenate / merge them and optimize files like images.
+- A **production** version will take these files, minify them, concatenate / merge them and optimize files like images. 
+
+## :gift_heart: Do you like gulpatic?
+[Spread word on Twitter](https://twitter.com/intent/tweet?text=gulpatic%20—%20Static%20server%20with%20gulp&url=https%3A%2F%2Fgithub.com%2Fboriskaiser%2Fgulpatic&via=boriskaiser)
 
 ## :scream_cat: TODOs
 - [x] [gulp-load-plugins](https://github.com/jackfranklin/gulp-load-plugins) — Automatically load any gulp plugins in your package.json
