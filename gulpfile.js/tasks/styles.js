@@ -7,7 +7,7 @@ var _autoprefixerConfig = {
 	cascade: false
 };
 
-gulp.task('_sass', function () {
+gulp.task('_styles', function () {
 	var _stylesDistPath = _paths.tmp + '/' + _stylesFolder;
 
 	// For best performance, don't add Sass partials to `gulp.src`
@@ -41,9 +41,8 @@ gulp.task('_sass', function () {
 
 // Styles task
 gulp.task('styles', function (callback) {
-	// Compile Sass files
-	runSequence('_sass', callback);
+	runSequence('_styles', callback);
 
-	// Watch Sass files
-	gulp.watch(_stylesSrcPath + '/**/*.scss', ['_sass']);
+	// Watch all sass files in styles folder
+	gulp.watch(_stylesSrcPath + '/**/*.scss', ['_styles']);
 });

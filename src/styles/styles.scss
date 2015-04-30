@@ -1,5 +1,5 @@
 @import 'vars';
-@import 'svg-sprite';
+@import 'svg-css-sprite';
 
 body {
   display: flex;
@@ -21,6 +21,20 @@ body {
   font-weight: $base-font-weight;
 }
 
+svg {
+  &, path {
+	fill: currentColor;
+  }
+}
+
+.svg-symbol-sprite {
+
+  &--stackoverflow {
+	width: 27px;
+	height: 36px;
+  }
+}
+
 img {
   margin-top: -30%;
 }
@@ -36,9 +50,6 @@ p {
   margin: .5rem 0;
 }
 
-
-
-// Footer
 footer {
   position: absolute;
   bottom: 0;
@@ -46,7 +57,6 @@ footer {
 
   width: 100%;
   text-align: center;
-
 
   ul {
 	list-style: none;
@@ -60,5 +70,13 @@ footer {
   a {
 	display: inline-block;
 	margin: 0 20px;
+	color: $color-black;
+
+	&:hover {
+	  color: $color-gold;
+	}
   }
 }
+
+
+

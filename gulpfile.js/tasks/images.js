@@ -3,17 +3,19 @@
 var pngquant = require('imagemin-pngquant');
 
 var _imagesFolder = 'images';
-var _svgSpriteFolder = 'svg-sprite';
 var _imagesSrcPath = _paths.src + '/' + _imagesFolder;
-var _imageMinConfig = {
-	progressive: true,
-	svgoPlugins: [{removeViewBox: false}],
-	use: [pngquant()]
-};
+var _svgCssSpritePath = _imagesSrcPath + '/svg-css-sprite';
+var _svgSymbolSpritePath = _imagesSrcPath + '/svg-symbol-sprite';
+var _svgoPlugins = [
+	{removeViewBox: false},
+	{removeTitle: true},
+	{removeDesc: true}
+];
 
 
-gulp.task('_svg-sprite', function () {
-	return gulp.src(_imagesSrcPath + '/' + _svgSpriteFolder + '/*.svg')
+// Traditional CSS sprites for use as background images
+gulp.task('svg:css-sprite', function () {
+	return gulp.src(_svgCssSpritePath + '/*.svg')
 		.pipe($.svgSprite({
 			mode: {
 				css: {
@@ -21,11 +23,11 @@ gulp.task('_svg-sprite', function () {
 					dest: './styles',
 					prefix: '.svg--%s',
 					dimensions: true,
-					sprite: '../images/svg-sprite.svg',
+					sprite: '../images/svg-css-sprite.svg',
 					bust: false,
 					render: {
 						scss: {
-							dest: '_svg-sprite.scss'
+							dest: '_svg-css-sprite.scss'
 						}
 					}
 				}
@@ -34,29 +36,62 @@ gulp.task('_svg-sprite', function () {
 		.pipe(gulp.dest(_paths.src));
 });
 
-gulp.task('_images', function () {
+// Inline sprites using the <symbol> element
+gulp.task('svg:symbol-sprite', function () {
+	return gulp.src(_svgSymbolSpritePath + '/*.svg')
+		.pipe($.svgSprite({
+			transform: [{
+				svgo: {
+					plugins: _svgoPlugins
+				}
+			}],
+			mode: {
+				symbol: {
+					sprite: '../images/svg-symbol-sprite.svg',
+					bust: false
+				}
+			}
+		}))
+		.pipe(gulp.dest(_paths.src));
+});
+
+gulp.task('svg', function (callback) {
+	runSequence(
+		['svg:css-sprite', 'svg:symbol-sprite'],
+		callback
+	);
+});
+
+
+gulp.task('_images', ['svg'], function () {
 	var _imagesDistPath = _paths.current + '/' + _imagesFolder;
 
 	return gulp.src([
 		_imagesSrcPath + '/**/*',
-		'!' + _imagesSrcPath + '/' + _svgSpriteFolder + '/',
-		'!' + _imagesSrcPath + '/' + _svgSpriteFolder + '/**'
+		'!' + _svgCssSpritePath + '/',
+		'!' + _svgCssSpritePath + '/**',
+		'!' + _svgSymbolSpritePath + '/',
+		'!' + _svgSymbolSpritePath + '/**'
 	])
 
-		.pipe($.if(_paths.current === _paths.dist, $.imagemin(_imageMinConfig)))
+		.pipe($.if(_paths.current === _paths.dist, $.imagemin({
+			progressive: true,
+			svgoPlugins: _svgoPlugins,
+			use: [pngquant()]
+		})))
 
 		.pipe(gulp.dest(_imagesDistPath))
 		.pipe(reload({stream: true}));
 });
 
+
 // Images task
 gulp.task('images', function (callback) {
 	runSequence(
-		'_svg-sprite',
 		'_images',
 		callback
 	);
 
-	// Watch image files
+	// Watch all files in images folder
 	gulp.watch(_imagesSrcPath + '/**/*', ['_images']);
 });

@@ -62,9 +62,6 @@ gulp.task('_templates', function (callback) {
 gulp.task('templates', function (callback) {
 	runSequence('_templates', callback);
 
-	// Watch Twig files
-	gulp.watch(_tempatesSrcPath + '/**/*.twig', ['_templates']);
-
-	// Watch data.json
-	gulp.watch(_dataPath, ['_templates']);
+	// Watch all files in templates folder
+	gulp.watch(_tempatesSrcPath + '/**/*', ['_templates']);
 });

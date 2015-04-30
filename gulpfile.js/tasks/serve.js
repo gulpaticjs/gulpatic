@@ -2,6 +2,7 @@
 
 var _syncPort = 3000;
 
+
 gulp.task('_browser-sync', function () {
 	browserSync({
 		server: {
@@ -16,7 +17,6 @@ gulp.task('_browser-sync', function () {
 
 gulp.task('_serve', function (callback) {
 	runSequence(
-		'clean',
 		'copy:bower',
 		'images',
 		'styles',
@@ -30,7 +30,11 @@ gulp.task('_serve', function (callback) {
 
 // Build and serve the output from the temp folder
 gulp.task('serve', function (callback) {
-	runSequence('_serve', callback);
+	runSequence(
+		'clean:tmp',
+		'_serve',
+		callback
+	);
 });
 
 // Build and serve the output from the dist folder
@@ -38,5 +42,9 @@ gulp.task('serve:dist', function (callback) {
 	// Change current path to dist
 	_paths.current = _paths.dist;
 
-	runSequence('_serve', callback);
+	runSequence(
+		'clean',
+		'_serve',
+		callback
+	);
 });

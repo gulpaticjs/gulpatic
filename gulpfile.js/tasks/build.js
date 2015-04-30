@@ -9,8 +9,8 @@ gulp.task('build', function (callback) {
 		'clean',
 		'copy:bower',
 		'_images',
-		'_sass',
-		'_js',
+		'_styles',
+		'_scripts',
 		'_templates',
 		callback
 	);

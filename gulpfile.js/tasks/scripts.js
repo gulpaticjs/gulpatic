@@ -4,7 +4,7 @@ var _jshintConfig = require('../config/jshint');
 var _scriptsFolder = 'scripts';
 var _scriptsSrcPath = _paths.src + '/' + _scriptsFolder;
 
-gulp.task('_js', function () {
+gulp.task('_scripts', function () {
 	var _scriptsDistPath = _paths.tmp + '/' + _scriptsFolder;
 
 	return gulp.src(_scriptsSrcPath + '/*.js')
@@ -30,8 +30,8 @@ gulp.task('_js', function () {
 
 // Scripts task
 gulp.task('scripts', function (callback) {
-	runSequence('_js', callback);
+	runSequence('_scripts', callback);
 
-	// Watch JS files
-	gulp.watch(_scriptsSrcPath + '/**/*.js', ['_js']);
+	// Watch all js files in scripts folder
+	gulp.watch(_scriptsSrcPath + '/**/*.js', ['_scripts']);
 });
