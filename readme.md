@@ -6,9 +6,14 @@
 
 ## :rocket: Getting started
 ```bash
+$ gem install scss-lint
+
+$ npm install -g gulp
+$ npm install -g phantomjs
+$ npm install -g casperjs
+
 $ git clone https://github.com/boriskaiser/gulpatic.git
 $ cd gulpatic
-$ gem install scss-lint
 $ npm install
 $ bower install
 $ gulp
@@ -20,6 +25,8 @@ $ gulp
 - `$ gulp build` — Build a production version
 - `$ gulp deploy` — Build and deploy production version to server (via rsync)
 - `$ gulp compress` — Compress a production version to a .zip file
+- `$ gulp test` — Generate test bitmaps and compare then against the current reference bitmaps
+- `$ gulp test:reference` — Generate (or update) reference bitmaps
 
 ### Versions
 - The **development** version has all the template, style, script and image files that make up your site in a clean format that you are happy to work on.
@@ -29,7 +36,7 @@ $ gulp
 [Spread word on Twitter](https://twitter.com/intent/tweet?text=gulpatic%20—%20Static%20server%20with%20gulp&url=https%3A%2F%2Fgithub.com%2Fboriskaiser%2Fgulpatic&via=boriskaiser)
 
 ## :scream_cat: TODOs
-- [ ] Integrate [BackstopJS](https://github.com/garris/BackstopJS) which automates CSS regression testing
+- [x] Integrate [BackstopJS](https://github.com/garris/BackstopJS) which automates CSS regression testing
 - [ ] Create [Yeoman](http://yeoman.io/) generator
 
 
