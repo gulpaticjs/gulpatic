@@ -51,7 +51,8 @@ $ gulp
 - [x] [gulp.spritesmith](https://github.com/twolfson/gulp.spritesmith) — Convert a set of images into a spritesheet and CSS variables via gulp
 - [x] [gulp-svg-sprite](https://github.com/jkphl/gulp-svg-sprite) — SVG sprites & stacks galore
 - [x] [gulp-rsync](https://github.com/jerrysu/gulp-rsync) — Rsync tasks for deploying gulp file structures
-- [x] [Integrate Bower](https://github.com/bower/bower) — A package manager for the web
+- [x] Integrate [Bower](https://github.com/bower/bower) — A package manager for the web
+- [ ] Integrate [BackstopJS](https://github.com/garris/BackstopJS) — Catch CSS curve balls.
 - [ ] Create [Yeoman](http://yeoman.io/) generator
 
 
