@@ -18,6 +18,7 @@ $ gulp
 - `$ gulp serve` or `$ gulp` — Build a development version and start a local server (incl. live reload)
 - `$ gulp serve:dist` — Build a production version and start a local server (incl. live reload)
 - `$ gulp build` — Build a production version
+- `$ gulp deploy` — Build and deploy production version to server (via rsync)
 - `$ gulp compress` — Compress a production version to a .zip file
 
 ### Versions
@@ -49,7 +50,7 @@ $ gulp
 - [x] [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) — Minify PNG, JPEG, GIF and SVG images
 - [x] [gulp.spritesmith](https://github.com/twolfson/gulp.spritesmith) — Convert a set of images into a spritesheet and CSS variables via gulp
 - [x] [gulp-svg-sprite](https://github.com/jkphl/gulp-svg-sprite) — SVG sprites & stacks galore
-- [ ] [gulp-rsync](https://github.com/jerrysu/gulp-rsync) — Rsync tasks for deploying gulp file structures
+- [x] [gulp-rsync](https://github.com/jerrysu/gulp-rsync) — Rsync tasks for deploying gulp file structures
 - [x] [Integrate Bower](https://github.com/bower/bower) — A package manager for the web
 - [ ] Create [Yeoman](http://yeoman.io/) generator
 
