@@ -9,6 +9,7 @@
 $ gem install scss-lint
 
 $ npm install -g gulp
+$ npm install -g bower
 $ npm install -g phantomjs
 $ npm install -g casperjs
 
