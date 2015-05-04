@@ -1,11 +1,12 @@
-{% extends "layout/base.twig" %}
+{% extends "_layout/base.twig" %}
 
 {% block page %}
 	<img src="images/gulp-logo/gulp-logo.svg" alt="Gulp logo"/>
 	<header>
-		<h1>{{ page.headline }}</h1>
+		<h1>{{ pageContent.homepage.headline }}</h1>
 	</header>
 	<p>
-		{{ page.content }}
+		{{ pageContent.homepage.content }}
 	</p>
+	<a href="/news">News</a>
 {% endblock %}

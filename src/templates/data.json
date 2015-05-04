@@ -1,7 +1,13 @@
 {
   "title": "gulpatic —  Static server with gulp",
-  "page": {
-	"headline": "gulpatic",
-	"content": "Static server with gulp."
+  "pageContent": {
+	"homepage": {
+	  "headline": "gulpatic",
+	  "content": "Static server with gulp."
+	},
+	"news": {
+	  "headline": "gulpatic",
+	  "content": "News page"
+	}
   }
 }

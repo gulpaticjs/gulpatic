@@ -6,7 +6,7 @@ var _dataPath = _tempatesSrcPath + '/data.json';
 
 
 gulp.task('_twig', function () {
-	return gulp.src(_tempatesSrcPath + '/*.twig')
+	return gulp.src(_tempatesSrcPath + '/**/*.twig')
 		.pipe($.plumber({
 			errorHandler: $.notify.onError({
 				title: "Templates task failed",
@@ -32,7 +32,7 @@ gulp.task('_useref', function () {
 	}
 	var _assets = $.useref.assets();
 
-	return gulp.src(_paths.tmp + '/*.html')
+	return gulp.src(_paths.tmp + '/**/*.html')
 		.pipe(_assets)
 		.pipe($.debug({title: 'assets'}))
 		.pipe($.if('*.css', $.csso()))
