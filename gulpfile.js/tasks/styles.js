@@ -42,7 +42,10 @@ gulp.task('_styles', ['scsslint'], function () {
 		}))
 
 		.pipe($.if(_paths.current === _paths.tmp, $.sourcemaps.init()))
-		.pipe($.changed(_stylesDistPath, {extension: '.css'}))
+		.pipe($.changed(_stylesDistPath, {
+			extension: '.css',
+			hasChanged: $.changed.compareSha1Digest
+		}))
 		.pipe($.sass({
 			precision: 10
 		}))
