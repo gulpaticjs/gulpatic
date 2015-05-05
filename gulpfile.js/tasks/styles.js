@@ -20,7 +20,7 @@ gulp.task('scsslint', function () {
 				message: "<%= error.message %>"
 			})
 		}))
-		.pipe($.changed('scsslint', {extension: '.scss'}))
+		.pipe($.cached('scsslint'))
 		.pipe($.scssLint({
 			config: 'gulpfile.js/config/scsslint.yml'
 		}))
