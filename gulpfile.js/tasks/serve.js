@@ -17,7 +17,7 @@ gulp.task('_browser-sync', function () {
 
 gulp.task('_serve', function (callback) {
 	runSequence(
-		'copy:bower',
+		['copy:bower', 'copy:fonts'],
 		'images',
 		'styles',
 		'scripts',
