@@ -10,7 +10,8 @@ var _autoprefixerConfig = {
 
 gulp.task('scsslint', function () {
 	return gulp.src([
-		_stylesSrcPath + '/*.scss',
+		_stylesSrcPath + '/**/*.scss',
+		'!' + _stylesSrcPath + '/plugins/*.scss',
 		'!**/_css-sprite.scss',
 		'!**/_svg-css-sprite.scss'
 	])
