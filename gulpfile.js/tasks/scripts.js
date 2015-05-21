@@ -7,8 +7,10 @@ var _scriptsSrcPath = _paths.src + '/' + _scriptsFolder;
 gulp.task('_scripts', function () {
 	var _scriptsDistPath = _paths.tmp + '/' + _scriptsFolder;
 
-	return gulp.src(_scriptsSrcPath + '/*.js')
-
+	return gulp.src([
+		_scriptsSrcPath + '/**/*.js',
+		'!' + _scriptsSrcPath + '/libs/*.js',
+	])
 		.pipe($.plumber({
 			errorHandler: $.notify.onError({
 				title: "Scripts task failed",
