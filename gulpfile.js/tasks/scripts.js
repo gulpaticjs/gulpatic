@@ -9,7 +9,7 @@ gulp.task('_scripts', function () {
 
 	return gulp.src([
 		_scriptsSrcPath + '/**/*.js',
-		'!' + _scriptsSrcPath + '/libs/*.js',
+		'!' + _scriptsSrcPath + '/libs/*.js'
 	])
 		.pipe($.plumber({
 			errorHandler: $.notify.onError({
