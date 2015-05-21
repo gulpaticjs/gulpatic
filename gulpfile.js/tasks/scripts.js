@@ -3,14 +3,13 @@
 var _jshintConfig = require('../config/jshint');
 var _scriptsFolder = 'scripts';
 var _scriptsSrcPath = _paths.src + '/' + _scriptsFolder;
+var _libsFilter = $.filter(['*', '!' + _scriptsSrcPath + '/libs/*.js']);
 
 gulp.task('_scripts', function () {
 	var _scriptsDistPath = _paths.tmp + '/' + _scriptsFolder;
 
-	return gulp.src([
-		_scriptsSrcPath + '/**/*.js',
-		'!' + _scriptsSrcPath + '/libs/*.js'
-	])
+	return gulp.src(_scriptsSrcPath + '/**/*.js')
+
 		.pipe($.plumber({
 			errorHandler: $.notify.onError({
 				title: "Scripts task failed",
@@ -18,9 +17,11 @@ gulp.task('_scripts', function () {
 			})
 		}))
 
+		.pipe(_libsFilter)
 		.pipe($.jshint(_jshintConfig))
 		.pipe($.jshint.reporter('jshint-stylish'))
 		.pipe($.jshint.reporter('fail'))
+		.pipe(_libsFilter.restore())
 
 		.pipe($.if(_paths.current === _paths.dist, $.uglify()))
 
