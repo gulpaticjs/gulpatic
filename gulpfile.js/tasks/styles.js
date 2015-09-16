@@ -30,7 +30,7 @@ gulp.task('scsslint', function () {
 
 
 gulp.task('_styles', ['scsslint'], function () {
-	var _stylesDistPath = _paths.tmp + '/' + _stylesFolder;
+	var _stylesDistPath = _paths.current + '/' + _stylesFolder;
 
 	// For best performance, don't add Sass partials to `gulp.src`
 	return gulp.src(_stylesSrcPath + '/*.scss')
