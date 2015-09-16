@@ -20,7 +20,7 @@ gulp.task('_twig', function () {
 
 		.pipe($.twig())
 
-		.pipe(gulp.dest(_paths.tmp))
+		.pipe(gulp.dest(_paths.current))
 		.pipe($.if(_paths.current === _paths.tmp, reload({stream: true})));
 });
 
@@ -32,7 +32,7 @@ gulp.task('_useref', function () {
 	}
 	var _assets = $.useref.assets();
 
-	return gulp.src(_paths.tmp + '/**/*.html')
+	return gulp.src(_paths.current + '/index.html')
 		.pipe(_assets)
 		.pipe($.debug({title: 'assets'}))
 		.pipe($.if('*.css', $.csso()))
