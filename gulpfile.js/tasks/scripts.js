@@ -6,7 +6,7 @@ var _scriptsSrcPath = _paths.src + '/' + _scriptsFolder;
 var _libsFilter = $.filter(['*', '!' + _scriptsSrcPath + '/libs/*.js']);
 
 gulp.task('_scripts', function () {
-	var _scriptsDistPath = _paths.tmp + '/' + _scriptsFolder;
+	var _scriptsDistPath = _paths.current + '/' + _scriptsFolder;
 
 	return gulp.src(_scriptsSrcPath + '/**/*.js')
 
