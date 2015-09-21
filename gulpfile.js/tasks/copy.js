@@ -6,7 +6,7 @@ var _fontsFolder = 'fonts';
 // Copy bower components to temp path
 gulp.task('copy:bower', function () {
 	return gulp.src(_paths.src + '/' + _bowerFolder + '/**/*')
-		.pipe(gulp.dest(_paths.tmp + '/' + _bowerFolder));
+		.pipe(gulp.dest(_paths.current + '/' + _bowerFolder));
 });
 
 
