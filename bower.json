@@ -1,25 +1,19 @@
 {
   "name": "gulpatic",
-  "version": "0.0.1",
-  "homepage": "https://github.com/boriskaiser/gulpatic",
+  "description": "Starterkit based on gulp",
+  "main": "index.js",
   "author": {
     "name": "Boris Kaiser",
-    "email": "mail@boriskaiser.com",
-    "url": "http://boriskaiser.com"
+    "email": "boris@kaiser.wtf",
+    "url": "http://kaiser.wtf"
   },
-  "description": "Static server with gulp",
-  "keywords": [
-    "static",
-    "server",
-    "webserver",
-    "gulp"
-  ],
   "license": "MIT",
   "ignore": [
+    "**/.*",
     "node_modules",
-    "bower_components"
+    "app/public/bower_components"
   ],
   "devDependencies": {
-    "normalize.css": "~3.0.3"
+    "normalize-css": "normalize.css#^4.1.1"
   }
 }

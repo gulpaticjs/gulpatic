@@ -1,4 +1,4 @@
-.DS_Store
-.idea
+.tmp
+app/public/bower_components
+build
 node_modules
-src/bower_components
