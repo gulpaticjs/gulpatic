@@ -7,7 +7,6 @@
   git clone https://github.com/boriskaiser/gulpatic.git MyAppName
   cd MyAppName
   npm install
-  bower install
   npm start
 ```
 
