@@ -13,6 +13,13 @@
 ```
 
 
+## Running the demo
+```bash
+  git checkout demo
+  npm start
+```
+
+
 ## Images
 - [Imagemin](https://github.com/imagemin/imagemin)
 
