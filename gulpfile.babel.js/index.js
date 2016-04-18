@@ -146,6 +146,7 @@ gulp.task('default', ['serve'], () => {
   gulp.watch(`${paths.viewsPath}/**/*.twig`, ['views', reload]);
 });
 
+// BUILD TASK
 gulp.task('build', cb => {
   runSequence(
     'serve',
