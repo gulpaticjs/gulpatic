@@ -1,6 +1,8 @@
-# Gulpatic — Starterkit based on gulp.
+# ![Gulpatic](resources/logo.png)
+> Starterkit based on gulp.
 
 [![Build Status](https://travis-ci.org/boriskaiser/gulpatic.svg?branch=develop)](https://travis-ci.org/boriskaiser/gulpatic)
+
 
 ## Getting started
 ```bash
