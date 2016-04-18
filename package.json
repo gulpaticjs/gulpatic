@@ -47,7 +47,6 @@
     "gulp-uglify": "^1.5.3",
     "gulp-useref": "^3.0.8",
     "imagemin-pngquant": "^4.2.2",
-    "jscs": "^3.0.1",
     "run-sequence": "^1.1.5",
     "webpack-stream": "^3.1.0"
   }
