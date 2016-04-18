@@ -1,12 +1,21 @@
-# Gulpatic — Starterkit based on gulp.
+# ![Gulpatic](resources/logo.png)
+> Starterkit based on gulp
 
 [![Build Status](https://travis-ci.org/boriskaiser/gulpatic.svg?branch=develop)](https://travis-ci.org/boriskaiser/gulpatic)
+
 
 ## Getting started
 ```bash
   git clone https://github.com/boriskaiser/gulpatic.git MyAppName
   cd MyAppName
   npm install
+  npm start
+```
+
+
+## Running the demo
+```bash
+  git checkout demo
   npm start
 ```
 
