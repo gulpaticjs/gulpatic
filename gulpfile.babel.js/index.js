@@ -12,12 +12,12 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 // Get configs
-import packageJson from '../package.json';
 import paths from './paths';
 import imageminConfig from './config/imagemin';
 import webpackConfig from './config/webpack';
 import sassConfig from './config/sass';
 import postCssConfig from './config/postcss';
+import browserSyncConfig from './config/browsersync';
 import uglifyConfig from './config/uglify';
 import htmlminConfig from './config/htmlmin';
 
@@ -130,15 +130,11 @@ gulp.task('serve', ['clean'], cb =>
 
 // DEFAULT TASK
 gulp.task('default', ['serve'], () => {
-  browserSync({
+  browserSync(Object.assign({
     server: {
       baseDir: currentDistPath,
     },
-    open: false,
-    notify: false,
-    logPrefix: packageJson.name,
-  });
-
+  }, browserSyncConfig));
   gulp.watch(`${paths.publicPath}/**/*`, ['copy', reload]);
   gulp.watch(`${paths.imagesPath}/**/*`, ['images', reload]);
   gulp.watch(`${paths.scriptsPath}/**/*.js`, ['scripts', reload]);
