@@ -23,8 +23,8 @@ import htmlminConfig from './config/htmlmin';
 
 // Set configs
 const NODE_ENV = process.env.NODE_ENV || 'development';
-let devMode = NODE_ENV === 'development';
-let currentDistPath = devMode ? paths.tempFolder : paths.buildFolder;
+const devMode = NODE_ENV === 'development';
+const currentDistPath = devMode ? paths.tempFolder : paths.buildFolder;
 
 // CLEAN TASK
 // Delete all files in current dist folder and images temp folder
@@ -147,9 +147,6 @@ gulp.task('default', ['serve'], () => {
 });
 
 gulp.task('build', cb => {
-  devMode = false;
-  currentDistPath = paths.buildFolder;
-
   runSequence(
     'serve',
     'useref',
