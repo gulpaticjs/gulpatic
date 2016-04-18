@@ -1,0 +1,5 @@
+{% macro svg(name) %}
+  <div class="svg svg--{{ name }}">
+    {% include '../images/.tmp/'~ name ~'.svg' %}
+  </div>
+{% endmacro %}

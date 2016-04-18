@@ -1,1 +1,12 @@
 {% extends "layout/_base.twig" %}
+
+{% from "./_macros.twig" import svg %}
+
+{% block content %}
+  <article>
+    <a href="https://github.com/boriskaiser/gulpatic">
+      {{ svg("logo") }}
+    </a>
+    <p>Starterkit based on gulp</p>
+  </article>
+{% endblock %}

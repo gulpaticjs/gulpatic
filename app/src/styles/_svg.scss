@@ -1,0 +1,9 @@
+.svg {
+  // Logo
+  &--logo {
+    min-width: 250px;
+    width: 25%;
+
+    fill: $color-red;
+  }
+}

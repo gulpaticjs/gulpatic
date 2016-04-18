@@ -1,10 +1,7 @@
-html {
-  box-sizing: border-box;
-}
+@import 'mixins';
 
-* {
-  &:before,
-  &:after {
-    box-sizing: inherit;
-  }
-}
+@import 'variables';
+@import 'fonts';
+
+@import 'global';
+@import 'svg';

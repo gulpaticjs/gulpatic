@@ -1,0 +1,5 @@
+@mixin dev-mode ($color: red) {
+  * {
+    outline: 1px dotted $color;
+  }
+}
