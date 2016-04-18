@@ -13,13 +13,13 @@ const reload = browserSync.reload;
 
 // Get configs
 import paths from './paths';
-import imageminConfig from './config/imagemin';
+import imageMinConfig from './config/imagemin';
 import webpackConfig from './config/webpack';
 import sassConfig from './config/sass';
 import postCssConfig from './config/postcss';
 import browserSyncConfig from './config/browsersync';
 import uglifyConfig from './config/uglify';
-import htmlminConfig from './config/htmlmin';
+import htmlMinConfig from './config/htmlmin';
 
 // Set configs
 const NODE_ENV = process.env.NODE_ENV || 'development';
@@ -48,7 +48,7 @@ gulp.task('copy', () =>
 // Optimize images
 gulp.task('images', () =>
   gulp.src(`${paths.imagesPath}/**/*`)
-    .pipe($.cache($.imagemin(imageminConfig)))
+    .pipe($.cache($.imagemin(imageMinConfig)))
     .pipe(gulp.dest(`${currentDistPath}/${paths.imagesFolder}`))
     .pipe($.size({ title: 'images' }))
     .pipe(gulp.dest(`${paths.imagesPath}/${paths.tempFolder}`))
@@ -114,7 +114,7 @@ gulp.task('useref', () => {
     .pipe($.if('*.css', $.cssnano()))
     .pipe($.if('*.js', $.uglify(uglifyConfig))
     )
-    .pipe($.if('*.html', $.htmlmin(htmlminConfig)))
+    .pipe($.if('*.html', $.htmlmin(htmlMinConfig)))
     .pipe(gulp.dest(`${currentDistPath}`));
 });
 
