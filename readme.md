@@ -36,7 +36,6 @@
 
 
 ## TODOs
-- [ ] Create a demo
 - [ ] Create Yeoman generator
 
 
