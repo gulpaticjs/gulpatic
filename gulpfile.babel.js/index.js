@@ -13,7 +13,7 @@ const reload = browserSync.reload;
 
 // Get configs
 import packageJson from '../package.json';
-import paths from './config/paths';
+import paths from './paths';
 import imageminConfig from './config/imagemin';
 import webpackConfig from './config/webpack';
 import sassConfig from './config/sass';
