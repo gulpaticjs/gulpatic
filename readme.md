@@ -20,6 +20,13 @@
 ```
 
 
+## Starting your project based on Gulpatic
+```bash
+rm -rf .git && git init
+git commit -m "Init"
+```
+
+
 ## Images
 - [Imagemin](https://github.com/imagemin/imagemin)
 
