@@ -12,5 +12,8 @@
     "**/.*",
     "node_modules",
     "app/public/bower_components"
-  ]
+  ],
+  "devDependencies": {
+    "normalize-css": "normalize.css#^4.1.1"
+  }
 }
