@@ -25,6 +25,7 @@
 rm -rf .git && git init
 git commit -m "Init"
 ```
+or use [Gulpatic Yeoman generator](https://github.com/boriskaiser/generator-gulpatic)
 
 
 ## Images
@@ -43,7 +44,7 @@ git commit -m "Init"
 
 
 ## TODOs
-- [ ] Create Yeoman generator
+- [ ]
 
 
 ## Inspired by
