@@ -1,4 +1,4 @@
-# ![Gulpatic](resources/logo.png)
+# ![Gulpatic](https://raw.githubusercontent.com/boriskaiser/gulpatic/demo/resources/logo.png)
 > Starterkit based on gulp
 
 [![Build Status](https://travis-ci.org/boriskaiser/gulpatic.svg?branch=develop)](https://travis-ci.org/boriskaiser/gulpatic)
@@ -13,10 +13,17 @@
 ```
 
 
-## Running the demo
+## Running the [demo](https://boriskaiser.github.io/gulpatic)
 ```bash
   git checkout demo
   npm start
+```
+
+
+## Starting your project based on Gulpatic
+```bash
+rm -rf .git && git init
+git commit -m "Init"
 ```
 
 
@@ -36,7 +43,6 @@
 
 
 ## TODOs
-- [ ] Create a demo
 - [ ] Create Yeoman generator
 
 
