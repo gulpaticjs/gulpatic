@@ -54,4 +54,4 @@ or use [Gulpatic Yeoman generator](https://github.com/boriskaiser/generator-gulp
 
 
 ## License
-MIT © [Boris Kaiser](http://boriskaiser.com)
+MIT © [Boris Kaiser](http://kaiser.wtf)
