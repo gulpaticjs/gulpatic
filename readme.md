@@ -13,7 +13,7 @@
 ```
 
 
-## Running the demo
+## Running the [demo](https://boriskaiser.github.io/gulpatic)
 ```bash
   git checkout demo
   npm start
