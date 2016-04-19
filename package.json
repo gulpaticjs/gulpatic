@@ -1,15 +1,14 @@
 {
   "name": "gulpatic",
-  "version": "1.0.0",
   "description": "Starterkit based on gulp",
-  "main": "index.js",
+  "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "bower install",
     "start": "gulp",
     "prebuild": "npm run prestart",
     "build": "cross-env NODE_ENV=production gulp build",
-    "deploy:gh-page": "gulp deploy:gh-page"
+    "deploy:gh-page": "gulp deploy:gh-page",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
