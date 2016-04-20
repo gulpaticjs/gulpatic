@@ -6,17 +6,19 @@
 
 ## Getting started
 ```bash
-  git clone https://github.com/boriskaiser/gulpatic.git MyAppName
-  cd MyAppName
-  npm install
-  npm start
+git clone https://github.com/boriskaiser/gulpatic.git myAppName
+cd myAppName
+npm install
+npm start
 ```
+
+Point your browser to [http://localhost:3000](http://localhost:3000).
 
 
 ## Running the [demo](https://boriskaiser.github.io/gulpatic)
 ```bash
-  git checkout demo
-  npm start
+git checkout demo
+npm start
 ```
 
 
@@ -25,6 +27,7 @@
 rm -rf .git && git init
 git commit -m "Init"
 ```
+or use [Gulpatic Yeoman generator](https://github.com/boriskaiser/generator-gulpatic)
 
 
 ## Images
@@ -43,7 +46,7 @@ git commit -m "Init"
 
 
 ## TODOs
-- [ ] Create Yeoman generator
+- [ ]
 
 
 ## Inspired by
@@ -53,4 +56,4 @@ git commit -m "Init"
 
 
 ## License
-MIT © [Boris Kaiser](http://boriskaiser.com)
+MIT © [Boris Kaiser](http://kaiser.wtf)
