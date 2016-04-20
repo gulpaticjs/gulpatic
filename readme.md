@@ -6,17 +6,19 @@
 
 ## Getting started
 ```bash
-  git clone https://github.com/boriskaiser/gulpatic.git MyAppName
-  cd MyAppName
-  npm install
-  npm start
+git clone https://github.com/boriskaiser/gulpatic.git myAppName
+cd myAppName
+npm install
+npm start
 ```
+
+Point your browser to [http://localhost:3000](http://localhost:3000).
 
 
 ## Running the [demo](https://boriskaiser.github.io/gulpatic)
 ```bash
-  git checkout demo
-  npm start
+git checkout demo
+npm start
 ```
 
 
