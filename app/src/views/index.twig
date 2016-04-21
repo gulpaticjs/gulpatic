@@ -3,10 +3,20 @@
 {% from "./_macros.twig" import svg %}
 
 {% block content %}
+  <header data-js-twitter>
+    by <a href="https://twitter.com/boriskaiser">@boriskaiser</a>
+  </header>
+  
   <article>
-    <a href="https://github.com/boriskaiser/gulpatic">
+    <div data-js-logo>
       {{ svg("logo") }}
+    </div>
+    <p data-js-title>
+      Starterkit based on gulp
+    </p>
+
+    <a href="https://github.com/boriskaiser/gulpatic" data-js-github-logo>
+      {{ svg("github-logo") }}
     </a>
-    <p>Starterkit based on gulp</p>
   </article>
 {% endblock %}

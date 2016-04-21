@@ -6,4 +6,14 @@
 
     fill: $color-red;
   }
+
+  // Github logo
+  &--github-logo {
+    width: 33px;
+    fill: $color-black;
+
+    &:hover {
+      fill: $color-red;
+    }
+  }
 }

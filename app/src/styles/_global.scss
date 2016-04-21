@@ -30,10 +30,40 @@ body {
   font-weight: $font-weight-regular;
 }
 
+header {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-red;
+    transition: $transition-duration;
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+}
+
 article {
   text-align: center;
 }
 
 p {
+  position: relative;
   margin: .5em 0;
+}
+
+.svg--github-logo {
+  position: relative;
+  top: 35px;
+  height: 0;
+  margin: 0 auto;
+
+  transition: $transition-duration;
 }
