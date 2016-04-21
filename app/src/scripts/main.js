@@ -1,1 +1,2 @@
-window.console.log("🤘 Let's rock ...");
+import introAnimation from './intro-animation';
+introAnimation.init();
