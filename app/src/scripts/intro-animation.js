@@ -31,6 +31,7 @@ function animateElements() {
 function animateBody() {
   // Body
   dynamics.animate(body, {
+    opacity: 1,
     scale: 1,
   }, {
     duration: 1500,
