@@ -153,7 +153,10 @@ gulp.task('build', cb => {
 
 // DEPLOY TASK
 // Deploy github page
-gulp.task('deploy:gh-page', ['build'], () =>
-  gulp.src(`${currentDistPath}/**/*`)
-    .pipe($.ghPages())
-);
+gulp.task('deploy:gh-page', ['build'], () => {
+  setTimeout(() => {
+    // Make sure that the `deploy` task runs after `build` (most of all `useref`)
+    gulp.src(`${currentDistPath}/**/*`)
+      .pipe($.ghPages());
+  }, 3000);
+});

@@ -7,7 +7,7 @@
     "start": "gulp",
     "prebuild": "npm run prestart",
     "build": "cross-env NODE_ENV=production gulp build",
-    "deploy:gh-page": "gulp deploy:gh-page",
+    "deploy:gh-page": "cross-env NODE_ENV=production gulp deploy:gh-page",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
