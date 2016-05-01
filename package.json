@@ -1,6 +1,6 @@
 {
   "name": "gulpatic",
-  "description": "Starterkit based on gulp",
+  "description": "Starter kit based on Gulp",
   "version": "1.0.0",
   "scripts": {
     "prestart": "bower install",
