@@ -1,20 +1,19 @@
 {
   "name": "gulpatic",
-  "description": "Starterkit based on gulp",
-  "version": "1.0.0",
+  "description": "Starter kit based on Gulp",
+  "version": "1.0.0-alpha.1",
   "scripts": {
     "prestart": "bower install",
     "start": "gulp",
     "prebuild": "npm run prestart",
     "build": "cross-env NODE_ENV=production gulp build",
-    "deploy:gh-page": "cross-env NODE_ENV=production gulp deploy:gh-page",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/boriskaiser/gulpatic.git"
+    "url": "https://github.com/gulpaticjs/gulpatic.git"
   },
-  "homepage": "https://boriskaiser.github.io/gulpatic",
+  "homepage": "https://gulpaticjs.github.io",
   "author": {
     "name": "Boris Kaiser",
     "email": "boris@kaiser.wtf",
@@ -32,13 +31,12 @@
     "cross-env": "^1.0.7",
     "del": "latest",
     "eslint": "^2.7.0",
-    "eslint-config-airbnb": "^7.0.0",
+    "eslint-config-airbnb": "^8.0.0",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.4",
     "gulp-cssnano": "^2.1.2",
     "gulp-data": "^1.2.1",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-htmlmin": "^1.3.0",
+    "gulp-htmlmin": "^2.0.0",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-load-plugins": "^1.2.1",
@@ -51,7 +49,7 @@
     "gulp-twig": "^0.5.0",
     "gulp-uglify": "^1.5.3",
     "gulp-useref": "^3.0.8",
-    "imagemin-pngquant": "^4.2.2",
+    "imagemin-pngquant": "^5.0.0",
     "run-sequence": "^1.1.5",
     "webpack-stream": "^3.1.0"
   }
