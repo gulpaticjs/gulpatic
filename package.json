@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/boriskaiser/gulpatic.git"
+    "url": "https://github.com/gulpaticjs/gulpatic.git"
   },
-  "homepage": "https://boriskaiser.github.io/gulpatic",
+  "homepage": "https://gulpaticjs.github.io",
   "author": {
     "name": "Boris Kaiser",
     "email": "boris@kaiser.wtf",
