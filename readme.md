@@ -1,7 +1,7 @@
 # ![Gulpatic](https://raw.githubusercontent.com/gulpaticjs/gulpatic/demo/resources/logo.png)
 > Starter kit based on Gulp
 
-[![Build Status](https://travis-ci.org/gulpaticjs/gulpatic.svg?branch=develop)](https://travis-ci.org/gulpaticjs/gulpatic)
+[![Build Status](https://travis-ci.org/gulpaticjs/gulpatic.svg?branch=master)](https://travis-ci.org/gulpaticjs/gulpatic)
 
 
 ## Getting started
