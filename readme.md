@@ -15,7 +15,7 @@ npm start
 Point your browser to [http://localhost:3000](http://localhost:3000).
 
 
-## Running the [demo](https://gulpaticjs.github.io/)
+## Running the [demo](https://gulpaticjs.github.io)
 ```bash
 git checkout demo
 npm start
