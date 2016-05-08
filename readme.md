@@ -1,12 +1,12 @@
-# ![Gulpatic](https://raw.githubusercontent.com/boriskaiser/gulpatic/demo/resources/logo.png)
+# ![Gulpatic](https://raw.githubusercontent.com/gulpaticjs/gulpatic/demo/resources/logo.png)
 > Starter kit based on Gulp
 
-[![Build Status](https://travis-ci.org/boriskaiser/gulpatic.svg?branch=develop)](https://travis-ci.org/boriskaiser/gulpatic)
+[![Build Status](https://travis-ci.org/gulpaticjs/gulpatic.svg?branch=develop)](https://travis-ci.org/gulpaticjs/gulpatic)
 
 
 ## Getting started
 ```bash
-git clone https://github.com/boriskaiser/gulpatic.git myAppName
+git clone https://github.com/gulpaticjs/gulpatic.git myAppName
 cd myAppName
 npm install
 npm start
@@ -15,7 +15,7 @@ npm start
 Point your browser to [http://localhost:3000](http://localhost:3000).
 
 
-## Running the [demo](https://boriskaiser.github.io/gulpatic)
+## Running the [demo](https://gulpaticjs.github.io/)
 ```bash
 git checkout demo
 npm start
@@ -27,7 +27,7 @@ npm start
 rm -rf .git && git init
 git commit -m "Init"
 ```
-or use [Gulpatic Yeoman generator](https://github.com/boriskaiser/generator-gulpatic)
+or use [Gulpatic Yeoman generator](https://github.com/gulpaticjs/gulpatic-generator)
 
 
 ## Images
