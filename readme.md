@@ -27,7 +27,7 @@ npm start
 rm -rf .git && git init
 git commit -m "Init"
 ```
-or use [Gulpatic Yeoman generator](https://github.com/gulpaticjs/gulpatic-generator)
+or use [Gulpatic Yeoman generator](https://github.com/gulpaticjs/generator-gulpatic)
 
 
 ## Images
