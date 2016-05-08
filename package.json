@@ -20,6 +20,10 @@
     "url": "http://kaiser.wtf"
   },
   "license": "MIT",
+  "keywords": [
+    "gulp",
+    "starter kit"
+  ],
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.7.6",
